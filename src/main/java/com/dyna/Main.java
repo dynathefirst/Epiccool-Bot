@@ -9,7 +9,7 @@ import javax.security.auth.login.LoginException;
 public class Main {
 
     public static void main(String[] args) throws LoginException {
-        JDABuilder.createDefault("token")
+        JDABuilder.createDefault("TOKEN")
                 .setActivity(Activity.playing("epiccool simulator"))
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
                 .addEventListeners(new Listener())
